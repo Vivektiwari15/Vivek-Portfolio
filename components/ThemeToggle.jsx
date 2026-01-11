@@ -1,13 +1,13 @@
-'use client'
-import { useEffect, useState } from 'react'
+"use client";
+import { useEffect, useState } from "react";
 
 export default function ThemeToggle({ onChange }) {
-  const [dark, setDark] = useState(false)
+  const [dark, setDark] = useState(false);
 
   useEffect(() => {
-    document.documentElement.classList.toggle('dark', dark)
-    onChange?.(dark)
-  }, [dark, onChange])
+    document.documentElement.classList.toggle("dark", dark);
+    onChange?.(dark);
+  }, [dark, onChange]);
 
   return (
     <button
@@ -18,7 +18,7 @@ export default function ThemeToggle({ onChange }) {
                  shadow-lg px-3 py-2 md:px-5 md:py-2.5 
                  rounded-full transition-all hover:scale-105 active:scale-95"
     >
-      <span className="text-sm md:text-lg">{dark ? '☀️' : '🌙'}</span>
+      <span className="text-sm md:text-lg">{dark ? "☀️" : "🌙"}</span>
     </button>
-  )
+  );
 }

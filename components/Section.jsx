@@ -1,5 +1,5 @@
-'use client'
-import { motion } from 'framer-motion'
+"use client";
+import { motion } from "framer-motion";
 
 export default function Section({ id, title, children }) {
   return (
@@ -11,8 +11,10 @@ export default function Section({ id, title, children }) {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="py-24 relative"
     >
-      <h2 className="text-4xl font-black text-center mb-16 tracking-tighter dark:text-white">{title}</h2>
+      <h2 className="text-4xl font-black text-center mb-16 tracking-tighter dark:text-white">
+        {title}
+      </h2>
       <div className="max-w-6xl mx-auto px-6">{children}</div>
     </motion.section>
-  )
+  );
 }
