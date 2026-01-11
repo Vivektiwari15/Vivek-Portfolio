@@ -8,6 +8,9 @@ export const metadata = {
     title: "Vivek Tiwari",
     description: "MERN Stack Developer Portfolio",
     type: "website",
+    icons: {
+    icon: '/favicon.ico'
+  }
   },
 };
 
