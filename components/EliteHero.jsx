@@ -46,8 +46,15 @@ export default function EliteHero() {
               Hire Me
             </a>
             <a 
-              href="/Vivek_Tiwari_Resume.pdf" 
-              download 
+             href="/Vivek_Tiwari_Resume.pdf" 
+        download
+        onClick={(e) => {
+          const fileExists = true; 
+          if(!fileExists) {
+             e.preventDefault();
+             alert("Certificate will be available shortly!");
+          }
+        }}   
               className="hero-btn btn-contact text-xs md:text-sm px-5 py-2 flex items-center justify-center"
             >  
               Resume
